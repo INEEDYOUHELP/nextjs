@@ -21,6 +21,7 @@ export default function Header() {
         <div className="text-xl space-x-4">
           {linkData.map((link) => (
             <Link
+              key={link.name}
               href={link.href}
               className={`${pathname === link.href ? "text-purple-500" : ""}`}
             >
